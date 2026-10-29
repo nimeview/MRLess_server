@@ -1,0 +1,36 @@
+[package]
+name = "mrless"
+version = "0.1.0"
+edition = "2021"
+description = "MRLess local mesh node — LAN discovery, flood relay, WebSocket UI API"
+
+[lib]
+name = "mrless"
+path = "src/lib.rs"
+crate-type = ["lib", "staticlib", "cdylib"]
+
+[[bin]]
+name = "mrless"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1"
+base64 = "0.22"
+clap = { version = "4", features = ["derive"] }
+dirs = "6"
+futures-util = "0.3"
+if-addrs = "0.13"
+mdns-sd = "0.13"
+rand = "0.8"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
+socket2 = { version = "0.5", features = ["all"] }
+tokio = { version = "1", features = ["full"] }
+tokio-tungstenite = "0.26"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+uuid = { version = "1", features = ["v4", "serde"] }
+
+[target.'cfg(target_os = "android")'.dependencies]
+jni = "0.21"

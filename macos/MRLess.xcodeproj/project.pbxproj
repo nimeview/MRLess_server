@@ -1,0 +1,297 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA0000000000000000000001 /* MRLessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000101 /* MRLessApp.swift */; };
+		AA0000000000000000000002 /* WebShellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000102 /* WebShellView.swift */; };
+		AA0000000000000000000003 /* NodeHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000103 /* NodeHost.swift */; };
+		AA0000000000000000000004 /* BundleSchemeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000104 /* BundleSchemeHandler.swift */; };
+		AA000000000000000000000A /* MeshDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000010A /* MeshDiscovery.swift */; };
+		AA0000000000000000000005 /* www in Resources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000105 /* www */; };
+		AA0000000000000000000006 /* mrless.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000106 /* mrless.xcframework */; };
+		AA0000000000000000000007 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000107 /* Security.framework */; };
+		AA0000000000000000000008 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000108 /* SystemConfiguration.framework */; };
+		AA0000000000000000000009 /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000109 /* Network.framework */; };
+		AA000000000000000000000B /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA000000000000000000010B /* WebKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA0000000000000000000100 /* MRLess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MRLess.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA0000000000000000000101 /* MRLessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRLessApp.swift; sourceTree = "<group>"; };
+		AA0000000000000000000102 /* WebShellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebShellView.swift; sourceTree = "<group>"; };
+		AA0000000000000000000103 /* NodeHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeHost.swift; sourceTree = "<group>"; };
+		AA0000000000000000000104 /* BundleSchemeHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleSchemeHandler.swift; sourceTree = "<group>"; };
+		AA000000000000000000010A /* MeshDiscovery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshDiscovery.swift; sourceTree = "<group>"; };
+		AA0000000000000000000105 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
+		AA0000000000000000000106 /* mrless.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = mrless.xcframework; path = lib/mrless.xcframework; sourceTree = "<group>"; };
+		AA0000000000000000000107 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		AA0000000000000000000108 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		AA0000000000000000000109 /* Network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Network.framework; path = System/Library/Frameworks/Network.framework; sourceTree = SDKROOT; };
+		AA000000000000000000010B /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		AA0000000000000000000110 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA0000000000000000000111 /* MRLess.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MRLess.entitlements; sourceTree = "<group>"; };
+		AA0000000000000000000112 /* MRLess-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MRLess-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA0000000000000000000200 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0000000000000000000006 /* mrless.xcframework in Frameworks */,
+				AA0000000000000000000007 /* Security.framework in Frameworks */,
+				AA0000000000000000000008 /* SystemConfiguration.framework in Frameworks */,
+				AA0000000000000000000009 /* Network.framework in Frameworks */,
+				AA000000000000000000000B /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA0000000000000000000300 = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000301 /* MRLess */,
+				AA0000000000000000000302 /* Frameworks */,
+				AA0000000000000000000303 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA0000000000000000000301 /* MRLess */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000101 /* MRLessApp.swift */,
+				AA0000000000000000000102 /* WebShellView.swift */,
+				AA0000000000000000000103 /* NodeHost.swift */,
+				AA0000000000000000000104 /* BundleSchemeHandler.swift */,
+				AA000000000000000000010A /* MeshDiscovery.swift */,
+				AA0000000000000000000112 /* MRLess-Bridging-Header.h */,
+				AA0000000000000000000110 /* Info.plist */,
+				AA0000000000000000000111 /* MRLess.entitlements */,
+				AA0000000000000000000105 /* www */,
+			);
+			path = MRLess;
+			sourceTree = "<group>";
+		};
+		AA0000000000000000000302 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000106 /* mrless.xcframework */,
+				AA0000000000000000000107 /* Security.framework */,
+				AA0000000000000000000108 /* SystemConfiguration.framework */,
+				AA0000000000000000000109 /* Network.framework */,
+				AA000000000000000000010B /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA0000000000000000000303 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000100 /* MRLess.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA0000000000000000000400 /* MRLess */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA0000000000000000000502 /* Build configuration list for PBXNativeTarget "MRLess" */;
+			buildPhases = (
+				AA0000000000000000000201 /* Sources */,
+				AA0000000000000000000200 /* Frameworks */,
+				AA0000000000000000000202 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MRLess;
+			productName = MRLess;
+			productReference = AA0000000000000000000100 /* MRLess.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA0000000000000000000401 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					AA0000000000000000000400 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = AA0000000000000000000500 /* Build configuration list for PBXProject "MRLess" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA0000000000000000000300;
+			productRefGroup = AA0000000000000000000303 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA0000000000000000000400 /* MRLess */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA0000000000000000000202 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0000000000000000000005 /* www in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA0000000000000000000201 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0000000000000000000001 /* MRLessApp.swift in Sources */,
+				AA0000000000000000000002 /* WebShellView.swift in Sources */,
+				AA0000000000000000000003 /* NodeHost.swift in Sources */,
+				AA0000000000000000000004 /* BundleSchemeHandler.swift in Sources */,
+				AA000000000000000000000A /* MeshDiscovery.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AA0000000000000000000600 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA0000000000000000000601 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		AA0000000000000000000602 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MRLess/MRLess.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../include";
+				INFOPLIST_FILE = MRLess/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 0.1.0;
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-liconv",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = local.mrless.mac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MRLess/MRLess-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AA0000000000000000000603 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MRLess/MRLess.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../include";
+				INFOPLIST_FILE = MRLess/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 0.1.0;
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-liconv",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = local.mrless.mac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MRLess/MRLess-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA0000000000000000000500 /* Build configuration list for PBXProject "MRLess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA0000000000000000000600 /* Debug */,
+				AA0000000000000000000601 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA0000000000000000000502 /* Build configuration list for PBXNativeTarget "MRLess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA0000000000000000000602 /* Debug */,
+				AA0000000000000000000603 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA0000000000000000000401 /* Project object */;
+}

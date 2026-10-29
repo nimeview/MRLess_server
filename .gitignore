@@ -1,0 +1,28 @@
+# Local app build artifacts (keep builds/README.md)
+builds/ios/
+builds/macos/
+builds/android/
+builds/windows/
+!builds/README.md
+
+# Bundled and generated web/package output
+dist/
+windows/www/
+
+# Xcode / Android / Rust intermediates
+ios/build/
+macos/build/
+android/.gradle/
+android/app/build/
+android/app/src/main/jniLibs/
+android/local.properties
+**/DerivedData/
+target/
+ios/lib/
+macos/lib/
+*.xcuserstate
+.DS_Store
+
+# IDEs and local tooling
+.idea/
+.vscode/

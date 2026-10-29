@@ -1,0 +1,52 @@
+name: MRLess
+options:
+  bundleIdPrefix: local.mrless
+  deploymentTarget:
+    iOS: "15.0"
+  xcodeVersion: "15.0"
+settings:
+  base:
+    PRODUCT_BUNDLE_IDENTIFIER: local.mrless.app
+    SWIFT_OBJC_BRIDGING_HEADER: MRLess/MRLess-Bridging-Header.h
+    HEADER_SEARCH_PATHS: $(SRCROOT)/../include
+    ENABLE_BITCODE: "NO"
+    IPHONEOS_DEPLOYMENT_TARGET: 15.0
+    CLANG_ENABLE_MODULES: "YES"
+targets:
+  MRLess:
+    type: application
+    platform: iOS
+    sources:
+      - path: MRLess
+        excludes:
+          - Resources/www/**
+    resources:
+      - path: MRLess/Resources
+    info:
+      path: MRLess/Info.plist
+      properties:
+        CFBundleDisplayName: MRLess
+        UILaunchScreen: {}
+        UIRequiresFullScreen: true
+        NSLocalNetworkUsageDescription: MRLess finds nearby mesh peers on your Wi-Fi. No internet is used.
+        NSBonjourServices:
+          - _mrless._tcp
+        NSAppTransportSecurity:
+          NSAllowsLocalNetworking: true
+          NSAllowsArbitraryLoads: false
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+    entitlements:
+      path: MRLess/MRLess.entitlements
+    dependencies:
+      - framework: Security.framework
+      - framework: SystemConfiguration.framework
+      - framework: Network.framework
+      - xcframework: lib/mrless.xcframework
+    settings:
+      base:
+        OTHER_LDFLAGS:
+          - -lc++
+          - -liconv
